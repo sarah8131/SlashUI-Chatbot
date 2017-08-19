@@ -172,7 +172,7 @@ function handleEcho(messageId, appId, metadata) {
 function handleApiAiAction(sender, action, responseText, contexts, parameters) {
   switch (action) {
     case 'say-hello':
-      sendQuickReply(sender, responseText, 'Ollaaaa how are you');
+      sendTextMessage(sender, 'Ollaaaa how are you');
       break;
     case 'tell-a-joke':
       let quick_replies = [{
